@@ -28,11 +28,33 @@ Make sure you have the [Angular CLI](https://github.com/angular/angular-cli#inst
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 
+## Proxy settings: 
+
+If you're behind a proxy you may have to do set proxy information:
+
+### NPM
+* npm config set proxy http://<username>:<password>@<proxy-server-url>:<port> 
+* npm config set https-proxy http://<username>:<password>@<proxy-server-url>:<port>
+
+### GRADLE
+
+* Create a gradle.properties file with:
+
+* systemProp.http.proxyHost=<proxy-server-url>
+* systemProp.http.proxyPort=<port>
+* systemProp.http.proxyUser=<username>
+* systemProp.http.proxyPassword=<password>
+
+* systemProp.https.proxyHost=<proxy-server-url>
+* systemProp.https.proxyPort=<port>
+* systemProp.https.proxyUser=<username>
+* systemProp.https.proxyPassword=<password>
 
 ## Running your first test
  
-Open `http://localhost:4200/`and Sign up as a new user, using pretend email and password
-Add this email and password to params section of protractor.conf.js
+* Open `http://localhost:4200/`and Sign up as a new user, using pretend email and password
+* Add this email and password to params section of protractor.conf.js
+* in command line, run protractor protractor.conf.js
 
 
 ## Functionality overview
