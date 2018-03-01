@@ -5,23 +5,22 @@
 The workshop makes use of two forked projects - [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app) for the Angular UI and a spring boot backend for the API - [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
 
 
-
 # Pre-requisites
-Java 8
-Gradle
-Node 8
-NPM
-Visual Studio Code (or other IDE for Node)
+* Java 8
+* Gradle
+* Node 8
+* NPM
+* Visual Studio Code (or other IDE for Node)
 
 # Getting started
 
-Clone or download [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app)
-Clone or download [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
+* Clone or download [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app)
+* Clone or download [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
 
 ## For the Spring Boot app:
 
-Mac: ./gradlew bootRun
-Windows: gradlew bootRun
+* Mac: ./gradlew bootRun
+* Windows: gradlew bootRun
 
 ## For the Angular UI:
 
@@ -34,8 +33,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
  
 Open `http://localhost:4200/`and Sign up as a new user, using pretend email and password
 Add this email and password to params section of protractor.conf.js
-
-
 
 
 ## Functionality overview
