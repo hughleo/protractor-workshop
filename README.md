@@ -38,7 +38,7 @@ If you're behind a proxy you may have to do set proxy information:
 
 ### GRADLE
 
-* Create a gradle.properties file with:
+Create a gradle.properties file with:
 
 * systemProp.http.proxyHost=proxy-server-url
 * systemProp.http.proxyPort=port
