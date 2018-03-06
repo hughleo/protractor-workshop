@@ -8,7 +8,7 @@ The workshop makes use of two forked projects - [Angular Realworld Example App](
 # Pre-requisites
 * Java 8
 * Gradle
-* Node 8
+* Node 8 or above
 * NPM
 * Visual Studio Code (or other IDE for Node)
 
@@ -17,16 +17,34 @@ The workshop makes use of two forked projects - [Angular Realworld Example App](
 * Clone or download [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app)
 * Clone or download [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
 
+## NOTICE: IF you are behind a corporate proxy, please see section below to allow the following installs and builds to work
+
 ## For the Spring Boot app:
 
 * Mac: ./gradlew bootRun
-* Windows: gradlew bootRun
+* Windows: gradle bootRun
 
 ## For the Angular UI:
 
-Make sure you have the [Angular CLI](https://github.com/angular/angular-cli#installation) installed globally, then run `npm install` to resolve all dependencies (might take a minute).
+* On the command line:-
+* Install the Angular CLI: `npm install -g @angular/cli`
+* Run `npm install` to resolve all dependencies (might take a minute)
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+* If this doesn't work: perform the following steps:
+* add `%USERPROFILE%\AppData\Roaming\npm` to the end of your Path
+* Then run `npm run ng serve`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+
+## For protractor: 
+* Install protractor globally: `npm install -g protractor`
+* Run WebDriver manager update: `webdriver-manager update`
+
+## Running your first test
+ 
+* Sign up as a new user (at `http://localhost:4200/`) using a dummy email and password
+* Add this email and password to params section of protractor.conf.js
+* In command line, run protractor protractor.conf.js
+
 
 ## Proxy settings: 
 
@@ -38,7 +56,7 @@ If you're behind a proxy you may have to do set proxy information:
 
 ### GRADLE
 
-Create a gradle.properties file with:
+Create a gradle.properties file at top level of project with the values filled in for your proxy information and username and password.
 
 * systemProp.http.proxyHost=proxy-server-url
 * systemProp.http.proxyPort=port
@@ -50,11 +68,10 @@ Create a gradle.properties file with:
 * systemProp.https.proxyUser=username
 * systemProp.https.proxyPassword=password
 
-## Running your first test
- 
-* Open `http://localhost:4200/`and Sign up as a new user, using pretend email and password
-* Add this email and password to params section of protractor.conf.js
-* in command line, run protractor protractor.conf.js
+### WEBDRIVER-MANAGER
+
+set HTTP_PROXY=http://proxy-server-url:port
+set HTTPS_PROXY=http://proxy-server-url:port
 
 
 ## Functionality overview
