@@ -11,6 +11,7 @@ The workshop makes use of two forked projects - [Angular Realworld Example App](
 * Node 8 or above
 * NPM
 * Visual Studio Code (or other IDE for Node)
+* Git
 
 # Getting started
 
@@ -18,22 +19,23 @@ The workshop makes use of two forked projects - [Angular Realworld Example App](
 
 ### For the Angular UI:
 On the command line:-  
-Install the Angular CLI: `npm install -g @angular/cli`  
-Clone or download [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app)  
-Then start the application  
-`cd angular-realworld-example-app`  
-`npm install`  
-`ng serve`  
-Navigate to `http://localhost:4200/`
+* Install the Angular CLI: `npm install -g @angular/cli`  
+* Clone or download [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app)  
+* Then start the application  
+* `cd angular-realworld-example-app`
+* `npm install`  
+* `ng serve`  
+* Navigate to `http://localhost:4200/`
 
 If this doesn't work, perform the following steps:  
-Add `%USERPROFILE%\AppData\Roaming\npm` to the end of your Path  
-Then run `npm run ng serve`  
+* Add `%USERPROFILE%\AppData\Roaming\npm` to the end of your Path  
+* Then run `npm run ng serve`  
 
 ### For the backing API
 
 * Clone or download [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
 Then start the application:
+* `cd spring-boot-realworld-example-app`  
 * Mac: `./gradlew bootRun`
 * Windows: `gradle bootRun`
 
