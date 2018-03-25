@@ -1,9 +1,6 @@
 # ![Protractor Workshop](protractor-logo-large.png)
 
-> ### Protractor workshop that covers useful patterns when creating end to end tests as well as covering promises
-
-The workshop makes use of two forked projects - [Angular Realworld Example App](https://github.com/hughleo/angular-realworld-example-app) for the Angular UI and a spring boot backend for the API - [Springboot Realworld Example App](https://github.com/hughleo/spring-boot-realworld-example-app)
-
+> ### Protractor workshop that covers useful patterns when creating end to end tests
 
 # Pre-requisites
 * Java 8
@@ -14,6 +11,13 @@ The workshop makes use of two forked projects - [Angular Realworld Example App](
 * Git
 
 # Getting started
+
+There are 3 main pieces of software to be setup: 
+* An Angular UI
+* An API that our UI will hit
+* Protractor and Webdriver manager that will allow you to run your test
+
+Follow the instructions below and you should be able to have a single test run in chrome.
 
 ## NOTICE: IF you are behind a corporate proxy, please see section below to allow the following installs and builds to work
 
